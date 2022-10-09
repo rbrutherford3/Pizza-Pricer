@@ -1,0 +1,12 @@
+body {
+    background-color: orange;
+}
+div {
+    margin: 5px 0px;
+}
+input[type='number']{
+    width: 40px;
+}
+input[type='text']{
+    width: 40px;
+}

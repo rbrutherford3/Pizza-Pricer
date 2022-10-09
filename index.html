@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pizza Pricer</title>
+		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body>
+		<h1>Price your pizza!</h1>
+		<h2>Shape:</h2>
+		<input type="radio" name="shape" id="circle" value="circle" onClick="circle_select();" checked>
+		<label for="circle">Circular</label>
+		<input type="radio" name="shape" id="square" value="square" onClick="square_select();">
+		<label for="square">Square</label>
+		<input type="radio" name="shape" id="rectangle" value="rectangle" onClick="rectangle_select();">
+		<label for="rectangle">Rectangle</label>
+		<h2>Dimensions:</h2>
+		<div id="circle_input">
+			<input type="number" id="diameter" min=0 value=0>
+			<label for="diameter">inches in diameter</label>
+		</div>
+		<div id="square_input" style="display: none;">
+			<input type="number" id="side" min=0 value=0>
+			<label for="side">inches per side</label>
+		</div>
+		<div id="rectangle_input" style="display: none;">
+			<div>
+				<input type="number" id="length" min=0 value=0>
+				<label for="length">inches in length</label>
+			</div>
+			<input type="number" id="width" min=0 value=0>
+			<label for="width">inches in width</label>
+		</div>
+		<h2>Price:</h2>
+		<div>
+			$
+			<input type="text" pattern="^\d*(\.\d{0,2})?$" id="price" value=0.00>
+			<label for="price" id="price_label">per pie</label>
+		</div>
+		<div>
+			<input type="checkbox" id="sliced" onClick="sliced_select();">
+			<label for="sliced">by the slice</label>
+		</div>
+		<div id="slices" style="display: none;">
+			<input type="number" id="num_slices" min=0 step=1 value=8>
+			<label for="num_slices">slices per pie</label>
+		</div>
+		<h2>Unit Price:</h2>
+		<div id="unitprice" style="display: none;">
+			<i>
+				<p id="calculated"></p>
+			</i>
+		</div>
+		<div>
+			<input type="button" onClick="calculate();" value="Calculate">
+		</div>
+	</body>
+</html>
