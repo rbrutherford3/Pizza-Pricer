@@ -6,6 +6,8 @@ Don't be fooled by the hype: pizza ain't always cheap.  Make sure you are gettin
 
 Future versions may include a way to post various pizza prices and calculate national averages.  There is a heavy demand for slicing through the bulls#@!.
 
+Go to [https://pizzapricer.spiffindustries.com/](https://pizzapricer.spiffindustries.com/) for a working demo!
+
 ## Install
 
 All code (HTML, JavaScript, CSS) is in the root.  Simply clone the project to a directory on your server:
